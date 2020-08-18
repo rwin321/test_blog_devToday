@@ -1,0 +1,18 @@
+.mainContainer {
+    display: inline-block;
+    position: center;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.mainContainer:focus {
+    background-color: linen;
+    box-shadow: 0 0 2px black;
+}
+.items {
+    font-size: 25px;
+    font-family: Roboto, sans-serif;
+}
+.items:hover {
+    text-decoration: underline;
+    color: #ff0000;
+}

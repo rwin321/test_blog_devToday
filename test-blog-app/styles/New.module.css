@@ -1,3 +1,0 @@
-.mainContainer {
-    composes: mainContainer from './HomePage.module.css'
-}

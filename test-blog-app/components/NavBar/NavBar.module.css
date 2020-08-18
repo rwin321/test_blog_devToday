@@ -1,0 +1,27 @@
+.link {
+    display: inline-block;
+    padding: 10px 60px;
+    font-size: 30px;
+    font-family: Georgia;
+}
+.link:hover {
+    color: lightcoral;
+    text-shadow: 2px 0 2px black;
+}
+.link:active {
+    text-shadow:0 1px 1px brown;
+}
+
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    left: 0;
+    top: 0;
+    right: 0;
+    border: 4px double black;
+    border-radius: 5px;
+    position: sticky;
+    background-color: #8888ad;
+}
