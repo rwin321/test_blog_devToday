@@ -73,9 +73,9 @@ const PostWrapper = styled.div`
 `
 
 const StyledLabel = styled.label`
-    position: absolute;
-    right: 88%;
-    top: 10%;
+    position: sticky;
+    top: 15%;
+    margin-bottom: 50px;
     font-size: 20px;
 `
 
@@ -92,18 +92,19 @@ const StyledTextarea = styled.textarea`
     font-size: 16px;
     resize: none;
     height: calc(100vh - 250px);
-    border-bottom: 50px solid rgba(50, 94, 84, 0.75);
+    border-bottom: 60px solid rgba(50, 94, 84, 0.75);
 `
 
 const SendButton = styled.button`
     position: absolute;
-    left: 100%;
-    font-weight: 600;
+    left: 91%;
+    top: 94%;
+    font-weight: 500;
     font-style: normal;
-    font-size: 17px;
+    font-size: 15px;
     color: #000;
     text-decoration: none;
-    border: 2px solid black;
+    border: 2px solid brown;
     border-radius: 20px;
     text-transform: uppercase;
     padding: 4px 12px;

@@ -57,14 +57,14 @@ const PostPage = (props: IPostPageProps) => {
             { post && !props.errorType.errorQueryPost && <>
                 <SectionBlock>
                     <PostTitle>title: {post.title}</PostTitle>
-                    <pre>{post.body}</pre>
+                    <PostContent>{post.body}</PostContent>
                     <hr/>
-                    <h4>Comments:</h4>
+                    <PostContent>Comments:</PostContent>
                     <ul>{post.comments?.length
                         ? post.comments.map(i => {
                             return <li key={i.id}>{`user${i.id}: ${i.body}`}</li>;
                         })
-                        : <li>There are no comments yet</li>
+                        : <li>No comments yet</li>
                     }</ul>
                 </SectionBlock>
             </>}
@@ -73,18 +73,17 @@ const PostPage = (props: IPostPageProps) => {
 };
 
 const PostTitle = styled.h2`
-    & {
-        font-size: 20px;
-        font-style: solid;
-        
-    }
-    &:doubleClick {
         font-size: 25px;
-        color: rgba(113, 220, 209, 0.85);
-        text-shadow: 2px 2px 5px black;
-    }
+        text-shadow: 0 0 5px black;
+        border-bottom: 2px solid black; 
+        padding: 20px 0 10px 0;
 `
-const SectionBlock = styled.section`
+const PostContent = styled.p`
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 0 0 0;
+`
+const SectionBlock = styled.div`
     display: block;
     position: center;
     font-family: Roboto;

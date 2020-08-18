@@ -39,7 +39,7 @@ const MainPage = (props: RecentPostsI) => {
 
             {
                 posts && !props.errorType.obtainPosts && <>
-                <H1><Span>Latest Posts</Span></H1>
+                <H1><Span>Latest Posts:</Span></H1>
                 <ul>{ posts.map(post => {
                     return <li key={post.id}>
                         <Item>
@@ -84,7 +84,7 @@ const H1 = styled.h1`
 `
 const Span = styled.span`
     display: inline;
-    font-size: 20px;
+    font-size: 35px;
     font-style: italic;
     text-decoration: none;
     padding: 10px 0;
